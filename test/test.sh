@@ -6,3 +6,4 @@ echo "test finished!"
 
 echo "new pr!"
 echo "add test"
+echo "add test2"
