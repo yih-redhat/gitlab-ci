@@ -7,7 +7,6 @@ coverity:
   only:
     refs:
       - master
-      - coverity
   script:
   - curl -o /tmp/cov-analysis-linux64.tgz https://scan.coverity.com/download/linux64
     --form project=$COVERITY_SCAN_PROJECT_NAME --form token=$COVERITY_SCAN_TOKEN
@@ -24,10 +23,10 @@ coverity:
 build:
   stage: build
   script:
-    - make
-    - make install
+    - sudo make
+    - sudo make install
 
 test:
   stage: test
   script:
-    - cello
+    - /usr/bin/cello
