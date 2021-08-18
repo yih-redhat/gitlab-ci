@@ -1,4 +1,5 @@
 stages:
+  - Coverity
   - test
 
 test:
