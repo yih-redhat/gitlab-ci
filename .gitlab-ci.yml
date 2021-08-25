@@ -10,7 +10,5 @@ build:
 
 test:
   stage: test
-  env:
-    SSH_KEY: ${{ secrets.SSH_KEY }}
   script:
     - test/test.sh
