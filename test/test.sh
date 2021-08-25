@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "Test env"
-echo "Secret is: ${COVERITY_SCAN_PROJECT_NAME}"
+echo "Secret is: ${SSH_KEY}"
 echo "This is ane update"
